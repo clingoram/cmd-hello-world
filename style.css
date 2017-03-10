@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #083952;
+    color: #fff;
+    font-family: "Monaco", Inconsolata, monospace;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #0f868e;
+}
+#typedtext{
+    position: absolute;
+    left: 36%;
+    top: 30%;
+}
+
+/*$ */
+.dollar{
+    display: block;
+    width: 420px;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: translateY(-50%);  
+}
+.dollar:before {
+    content: '$';
+    color: #52a563;
+}
+/*catch u later*/
+.dollar:nth-child(n){
+    animation: typewriting 4s steps(44) 30s 1 normal both;
+    color: #b62246;/*pink red*/
+}
+/*hi my name*/
+.dollar:nth-child(1){
+    animation: typewriting 4s steps(44) 1s 1 normal both;
+    color: #b62246; /*red*/
+}
+/*ask user name*/
+.dollar:nth-child(2){
+    animation: typewriting 4s steps(44) 8s 1 normal both;
+    color: #b62246; /*yellow*/
+}
+/*user input:*/
+.dollar:nth-child(3){
+    animation: typewriting 4s steps(44) 12s 1 normal both; 
+    color: #b62246; /*orange*/
+}
+/*say hello to user*/
+.dollar:nth-child(4){
+    animation: typewriting 4s steps(44) 16s 1 normal both; 
+    color: #b62246; /*purple*/
+}
+/*nice to meet u*/
+.dollar:nth-child(7){
+    animation: typewriting 4s steps(44) 22s 1 normal both; 
+    color: #b62246; /*light yellow*/
+}
+/*my web & github*/
+.dollar:nth-child(8){
+    animation: typewriting 4s steps(44) 26s 1 normal both; 
+    color: #b62246;/*black*/
+}
+/*exit*/
+.dollar:last-child{
+    animation: typewriting 4s steps(44) 34s 1 normal both; 
+    color: #b62246; /*pink*/
+}
+
+/*input*/
+#reply{
+    background: none;
+    position: absolute;      
+    height: 25px;
+    left: 180px;
+    border: none;
+    border-bottom: solid 1px #fff;
+    color: #fff;
+    font-size: 22px;
+    width: 120px;
+}
+#submit{
+    position: absolute;
+    top: 6px;
+    left: 300px;
+    border: none;
+    background: none;
+    color: #fff;
+}
+/*input result*/
+#showme{
+    position: absolute;
+    top: 73px;
+    left: 110px;
+    color: #ffd800;
+    text-transform: capitalize;
+}
+/*span :_*/
+.wrap{
+    animation: blink 1s infinite;
+}
+::selection {
+    background: #aafaff;
+    color: #fff;
+}
+/*animation*/
+ @keyframes typewriting{
+    from{
+        width: 0;
+    }
+    to{
+       width: 450px;
+       color: #fff;
+    }
+}
+@keyframes blink{
+   to{
+        opacity: .0;
+    }
+}
