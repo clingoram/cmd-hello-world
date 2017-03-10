@@ -1,6 +1,6 @@
 # hello-world
 <br>
-在網路上看到有Hello World想要做做看。
+在網路上看到--> <a href="https://github.com/muan/hello-world">Hello World</a>讓我想要試試看。
 <br>
 做成的樣式、效果類似cmd的樣子。
 
